@@ -31,7 +31,7 @@ function calculate() {
 		$('#info').html('You have chosen pizza Margherita!');
 	}
 	else if ( price > 0) {
-		$('#info').html('Great choise!');
+		$('#info').html('Great choice!');
 	}
 	
 	// Add toppings to the chosen base
