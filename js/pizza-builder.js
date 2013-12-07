@@ -3,7 +3,7 @@ $('input, select').change(calculate);
 
 $('input:radio[name=pad]').click(function() {
 	
-	var new_image = '<img src="images/pizza-small.png" width="280px;" alt="" />';
+	var new_image = '<img src="images/pizza-small.png" width="280px;" alt="Pizza" />';
 	
 	$('#canvas').prepend(new_image);
 
