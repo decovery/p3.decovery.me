@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	
+	<link rel="stylesheet" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Life+Savers:400,700&subset=latin' rel='stylesheet' type='text/css'>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+
+<!--Left side-->
+	<div id="left-side">
+		<h1>Your own pizza builder</h1>
+		
+		<!--Base-->
+		<h2>Size</h2>
+		<div id="base">
+			<div class="pad" id="small">Small</div>
+			<input type="radio" name="pad" id="s" value="10">
+			<label for="small">$ 10</label><br /><br />
+			
+			<div class="pad" id="medium">Medium</div>
+			<input type="radio" name="pad" id="m" value="12">
+			<label for="medium">$ 12</label><br /><br />
+			
+			<div class="pad" id="large">Large</div>
+			<input type="radio" name="pad" id="l" value="15">
+			<label for="large">$ 15</label><br /><br />
+		</div>
+		
+		<!--Toppings-->
+		<h2>Toppings</h2>
+		<div id="alert"></div>
+		<div id="toppings">
+			<div class="top" id="ham"></div>
+			<input type="checkbox" name="addition" value="0.3" title="Price: $ 0.3"/>Ham<br />
+			<div class="top" id="shrimps"></div>
+			<input type="checkbox" name="addition" value="0.8" title="Price: $ 0.8"/>Shrimps<br />
+			<div class="top" id="onions"></div>
+			<input type="checkbox" name="addition" value="0.1" title="Price: $ 0.1"/>Onions<br />
+			<div class="top" id="tomatoes"></div>
+			<input type="checkbox" name="addition" value="0.3" title="Price: $ 0.3"/>Tomatoes<br />
+			<div class="top" id="sausages"></div>
+			<input type="checkbox" name="addition" value="0.4" title="Price: $ 0.4"/>Sausages<br />
+			<div class="top" id="olives"></div>
+			<input type="checkbox" name="addition" value="0.3" title="Price: $ 0.3"/>Olives<br />
+			<div class="top" id="peppers"></div>
+			<input type="checkbox" name="addition" value="0.5" title="Price: $ 0.5"/>Peppers<br />
+			<div class="top" id="mushrooms"></div>
+			<input type="checkbox" name="addition" value="0.2" title="Price: $ 0.2"/>Mushrooms<br />
+		</div>
+		<br />
+		
+		<!--Quantity-->
+		<h2>Quantity:</h2>
+		<span>Max quantity is 10:</span>
+		<select id="quantity">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+		
+		<br /><br />
+		
+		<!--Total-->
+		<div id="total">Total price: $ <span id="summary"></span></div>
+	</div>
+<!--End Left side-->
+
+<!--Right side	-->
+	<div id='right-side'>
+	
+		<div id='box'>
+			<div id='canvas'></div>
+		</div>
+		<h3 id="info"></h3>
+		
+	</div>
+<!--End Right side-->
+	
+</div>
+
+<script src="js/pizza-builder.js"></script>
+
+</body>
+</html>

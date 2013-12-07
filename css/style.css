@@ -1,0 +1,136 @@
+/*box sizing*/
+* {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;}
+ 
+/*reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #444444;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* @group General layout */
+
+body {
+	background-image: url('../images/canvas.jpg');
+} 
+#wrapper {
+	width: 980px;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#left-side, #right-side {
+	width: 49%;
+	float: left;
+	position: relative;
+}
+#left-side {
+	padding: 30px 60px;
+}
+#right-side {
+	border-left: 1px dashed #769a00;
+	padding: 30px 60px;
+}
+
+/* @end */
+
+/* @group Typography */
+
+h1 {
+	font-family: 'Life Savers', cursive;
+	font-weight: 700;
+	font-size: 32px;
+	color: #fe5b2e;
+	border-bottom: 1px dashed #769a00;
+	margin-bottom: 20px;
+}
+h2 {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	color: #769a00;
+}
+#alert {
+	font-family: Georgia, 'Times new Roman', Times, serif;
+	font-style: italic;
+	color: #fe5b2e;
+}
+#info {
+	font-family: 'Life Savers', cursive;
+	font-weight: 400;
+	font-size: 32px;
+	color: #fe5b2e;
+	margin-left: 30px;
+	text-align: center;
+}
+
+/* @end */
+
+#base, #toppings {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding: 0 30px;
+}
+#small.pad, #medium.pad, #large.pad {
+	width: 100px;
+	float: left;
+}
+#box {
+	background-image: url('../images/pizza-box.png');
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 450px;
+	margin: 0px auto;
+}
+#canvas {
+	width: 250px;
+	height: 250px;
+	position: relative;
+	top: 180px;
+	left: 40px;
+	z-index: 1;
+	overflow: hidden;
+}
