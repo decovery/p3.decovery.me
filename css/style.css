@@ -97,6 +97,11 @@ h2 {
 	font-style: italic;
 	color: #fe5b2e;
 }
+#total {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	color: #fe5b2e;
+}
 #info {
 	font-family: 'Life Savers', cursive;
 	font-weight: 400;
